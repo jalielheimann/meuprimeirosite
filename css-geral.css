@@ -1,52 +1,381 @@
+/* CONFIGURAÇÕES GERAIS */
 
-    
-     .box-content-1 {
-        height: 450px;
-        width: 1000px;
-        display: flex;
-        align-items: center;
-        border-radius: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+body {
+    background-color: #1b1b1b;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* FIM DAS CONFIGURAÇÕES GERAIS */
+
+.section-1 {
+    height: 768px;
+    width: 100%;
+    background-image: url(/imgs/back-sec-1.png);
+    align-items: center;
+    margin: auto;
+    margin-top: 0px;
+    display: flex;
+}
+
+.section-1 .box-content-1 {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-size: 28px;
+}
+
+.box-content-1 strong {
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.box-content-1 p {
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.saiba-mais {
+    width: 120px;
+    height: 25px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    background-color: #32aca8;
+    border-radius: 30px;
+    margin-top: 30%;
+}
+
+.saiba-mais p {
+    font-weight: bold;
+    color: white;
+}
+
+/* SESSÃO 2 */
+
+.section-2 {
+    height: 768px;
+    width: 100%;
+    background-image: url(/imgs/back-sec-2.png);
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+}
+
+.box-content-text {
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    margin: auto;
+    margin-left: 11%;
+    text-align: center;
+    display: grid;
+}
+
+.box-content-text strong {
+    font-size: 50px;
+    color: white;
+    font-weight: 900;
+}
+
+.content-text {
+    background-color: #2c2c2c;
+    width: 450px;
+    height: 300px;
+    border-radius: 30px;
+    margin: auto;
+    align-items: justify;
+    display: grid;
+    padding: 20px;
+    justify-items: auto;
+    transition: 600ms ease-in-out;
+}
+
+.content-text:hover {
+    box-shadow: #1b1b1b 1px 1px 80px;
+}
+
+.content-text p {
+    font-size: 15px;
+    color: white;
+    align-items: center;
+    text-align: justify;
+    text-indent: 1.5em;
+    line-height: 28px;
+}
+
+.content-text p br p {
+    font-size: 16px;
+    color: white;
+    align-items: center;
+    text-align: justify;
+    text-indent: 1.5em;
+    line-height: 28px;
+}
+
+.content-text p p p {
+    font-size: 16px;
+    color: white;
+    align-items: center;
+    text-align: justify;
+    text-indent: 1.5em;
+    line-height: 28px;
+}
+
+.content-text br {
+    font-size: 16px;
+    color: white;
+    align-items: center;
+    text-align: justify;
+    text-indent: 1.5em;
+    line-height: 28px;
+}
+
+/* FIM SESSÃO 2 */
+
+/* SESSÃO 3 */
+
+.section-3 {
+    height: 768px;
+    width: 100%;
+    background-image: url(/imgs/back-sec-3.png);
+    align-items: center;
+    margin: auto;
+    margin-top: 0px;
+    display: flex;
+}
+
+/* FIM DA SESSÃO 3 */
+
+/* SESSÃO 4 */
+
+.section-4 {
+    height: 768px;
+    width: 100%;
+    background-image: url(/imgs/back-sec-4.png);
+    align-items: center;
+    margin: auto;
+    margin-top: 0px;
+    display: flex;
+}
+
+/* FIM DA SESSÃO 4 */
+
+/* SESSÃO 5 */
+
+.section-5 {
+    height: 768px;
+    width: 100%;
+    background-image: url(/imgs/back-sec-5.png);
+    align-items: center;
+    margin: auto;
+    margin-top: 0px;
+    display: flex;
+}
+
+.section-cont {
+    height: 768px;
+    width: 100%;
+    background-image: url(/imgs/back-sec-cont.png);
+    align-items: center;
+    margin: auto;
+    margin-top: 0px;
+    display: flex;
+}
+
+.content-contact {
+    background-color: #2c2c2c;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: auto;
+    align-items: justify;
+    display: grid;
+    padding: 10px;
+    justify-items: auto;
+    gap: 10px;
+    transition: 600ms ease-in-out;
+}
+
+.content-contact:hover {
+    background-color: #32aca8;
+}
+
+.content-contact img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.content-contact-text {
+    height: 100px;
+    width: 250px;
+    color: white;
+    background-color: #2c2c2c;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.content-contact-name {
+    height: 10px;
+    width: 250px;
+    color: white;
+    background-color: #2c2c2c;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.icons-red {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.content-contact-name strong {
+    font-size: 24px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.content-contact-text strong {
+    font-size: 28px;
+}
+
+.content-contact-text p {
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-contact-text img {
+    height: 30px;
+    width: 30px;
+}
+
+.content-contact-text p p {
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-container {
+    display: flex;
+    margin: auto;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/*FIM DA SESSÃO 5 */
+footer {
+    width: 100%;
+    color: white;
+    height: 40px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+footer p {
+    color: white;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+/* MENU RESPONSIVO */
+
+@media screen and ( max-width: 600px) {
+    header {
         margin: auto;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 3%;
-        background-color: #D6D6D6;
-        transition: 400ms;
-    }
-    
-    .box-content-1:hover {
-        border-bottom: 4px solid #2BB9D9;
-        border-top: 4px solid #2BB9D9;
-    }
-    
-    .mid-box-1 {
-        font-weight: 700;
-        color: #2BB9D9;
         align-items: center;
-        margin:  auto ;
-        font-size: 50px;
-       
-        background-color: #D6D6D6;
-    }
-    
-    
-    .saiba-mais{
-        width: 100px;
-        height: 30px;
-        color: white;
-        font-weight: 700;
-        text-align: center;
-        align-items: center;
-        margin: auto;
-        background-color: #2BB9D9;
-        border-radius: 30px;
-    }
-    
-    
-    
-    .content-2{
-        background-image: linear-gradient(to bottom, #2BB9D9, #88E8F2);
         width: 100%;
-        margin-top: 150px;
-        height: 1100px;
+        display: flex;
+        flex-direction: column;
     }
+    body {
+        margin: auto;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-1, .section-2, .section-3, .section-4, .section-5, .section-cont {
+        margin: auto;
+        width: 100%;
+        align-items: center;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        flex-direction: column;
+    }
+    .content-text .box-content-text, contact-container {
+        margin: auto;
+        align-items: center;
+        display: grid;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+    .box-content-text {
+        margin-left: 0;
+        width: 100%;
+    }
+    .content-text {
+        margin-left: 0%;
+        width: 92%;
+        border: 0px solid;
+        height: 420px;
+        margin: auto;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    .content-text iframe {
+        height: 420px;
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+}
+
+/* FIM DO MENU RESPONSIVO */
